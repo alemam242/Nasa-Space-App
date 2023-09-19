@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/primary"
+        app:cardBackgroundColor="@color/primary"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/self"
+                android:scaleType="fitXY"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/livewhite"
+                android:scaleType="fitCenter"
+                android:layout_above="@+id/title"
+                android:layout_alignParentEnd="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:text="@string/dummyText"
+                android:textColor="@color/lightYellow"
+                android:layout_below="@+id/thumbnail"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:paddingTop="5dp"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:paddingRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/dummyText"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/primary"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="30dp"
+        />
+
+
+</LinearLayout>

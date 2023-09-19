@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/home"
+            android:title="HOME"
+            android:icon="@drawable/home"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/live"
+            android:title="LIVE"
+            android:icon="@drawable/live"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/news"
+            android:title="NEWS"
+            android:icon="@drawable/news"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/video"
+            android:title="VIDEOS"
+            android:icon="@drawable/video"
+            android:checkable="true"
+            android:iconTint="#000000"
+            />
+
+    </group>
+
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/photos"
+            android:title="PHOTOS"
+            >
+            <menu>
+                <item
+                    android:id="@+id/astronomy"
+                    android:title="ASTRONOMY"
+                    android:icon="@drawable/astronomy"
+                    android:checkable="true"
+                    />
+
+                <item
+                    android:id="@+id/mars"
+                    android:title="MARS"
+                    android:icon="@drawable/mars"
+                    android:checkable="true"
+                    />
+            </menu>
+        </item>
+    </group>
+
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/share"
+            android:title="SHARE"
+            android:icon="@drawable/shareicon"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/about"
+            android:title="ABOUT"
+            android:icon="@drawable/about"
+            android:checkable="true"
+            />
+
+    </group>
+</menu>

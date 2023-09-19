@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".viewImages">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primary"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Photos"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/astronomy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Picture of the Day"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/green"
+        android:visibility="gone"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty"
+        android:text="No Data Found"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_margin="25dp"
+        android:visibility="gone"
+        />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView"
+        />
+</LinearLayout>

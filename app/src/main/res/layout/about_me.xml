@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/developer"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="visible"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/selfImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/self"
+            app:civ_border_width="0dp"
+            app:civ_border_color="#8A009688"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Al Emam (Suvo)"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Software Developer"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="alemam242@gmail.com | alemamsuvo@gmail.com"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Social Links"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            >
+            <ImageView
+                android:id="@+id/Github"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/github"
+                style="?android:borderlessButtonStyle"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

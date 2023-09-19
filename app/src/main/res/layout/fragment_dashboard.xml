@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Dashboard"
+    android:orientation="vertical"
+    android:background="#56AFABAB">
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        >-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/primary"
+                app:cardBackgroundColor="@color/primary"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:iss_auto_cycle="true"
+                    app:iss_period="1000"
+                    app:iss_delay="1000"
+                    app:iss_corner_radius="20"
+                    app:iss_text_align="CENTER"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/primary"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="30dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recent News"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/primary"
+                    />
+
+                <TextView
+                    android:id="@+id/allNews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View All"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/primary"
+                    android:clickable="true"
+                    android:textColorLink="@color/lightYellow"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                >
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/errorLogo"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    app:lottie_rawRes="@raw/eror"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    />
+
+                <GridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="visible"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+<!--    </ScrollView>-->
+</LinearLayout>

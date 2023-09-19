@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#5ab484</color>
+
+    <color name="primary">#8692f7</color>
+    <color name="darkBlue">#172852</color>
+    <color name="roseRed">#f78692</color>
+    <color name="lightYellow">#f7eb86</color>
+    <color name="selectedItem">#7D83BB</color>
+
+    <color name="navBarActiveIconColor">#FFFFFF</color>
+    <color name="navBarInactiveIconColor">#CDCCCC</color>
+</resources>

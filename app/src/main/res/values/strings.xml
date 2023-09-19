@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Novoneel</string>
+
+    <string name="drawer_close">Close Drawer</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="nav_item_home"><font size="10">Home</font></string>
+    <string name="videoItem"><font size="10">Videos</font></string>
+    <string name="liveItem"><font size="10">Live</font></string>
+    <string name="newsItem"><font size="10">News</font></string>
+
+    <string name="dummyText">Hello iuWHDJLlk OIDJL oIDHKJHIUHIU UHHKJH Hello iuWHDJLlk OIDJL oIDHKJHIUHIU UHHKJH Hello iuWHDJLlk OIDJL oIDHKJHIUHIU UHHKJH</string>
+
+    <string name="newsApi">AIzaSyBzCuzo9Hrs-IPmJYwq3F76YWueqTslC0o</string>
+    <string name="youtubeApi">7fd829b7a9464993b43f72655ef5122e</string>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Home"
+        android:title="@string/nav_item_home"
+        android:icon="@drawable/home"
+        app:showAsAction="withText"
+        android:checkable="false"
+        />
+
+    <item
+        android:id="@+id/News"
+        android:title="@string/newsItem"
+        android:icon="@drawable/news"
+        app:showAsAction="withText"
+        android:checkable="false"
+        />
+
+    <item
+        android:id="@+id/Videos"
+        android:title="@string/videoItem"
+        android:icon="@drawable/video"
+        app:showAsAction="withText"
+        android:checkable="false"
+        />
+
+    <item
+        android:id="@+id/Live"
+        android:title="@string/liveItem"
+        android:icon="@drawable/live"
+        app:showAsAction="withText"
+        android:checkable="false"
+        />
+
+
+</menu>
